@@ -24,8 +24,6 @@ export class CreateUserDto {
   otherNames: string;
   @IsEnum(RoleEnum)
   role: RoleEnum;
-  @IsDate()
-  updatedAt: Date;
   @IsNotEmpty()
   password: string;
 }
