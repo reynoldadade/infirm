@@ -17,8 +17,9 @@ model User {
   id        String   @id @default(uuid())
   familyName  String 
   firstName String
-  otherNames String
+  otherNames String? 
   email     String   @unique
+  address String?
   password  String
   role      Role
   createdAt DateTime @default(now())
