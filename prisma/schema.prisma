@@ -23,6 +23,7 @@ model User {
   role      Role
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  activated Boolean @default(false)
 
   // Relations
   appointmentsAsPatient Appointment[] @relation("PatientAppointments")

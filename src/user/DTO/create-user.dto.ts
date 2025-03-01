@@ -1,11 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
-import {
-  IsDate,
-  IsEmail,
-  IsEnum,
-  IsNotEmpty,
-  IsOptional,
-} from 'class-validator';
+import { IsEmail, IsEnum, IsNotEmpty, IsOptional } from 'class-validator';
 
 export enum RoleEnum {
   PATIENT = 'PATIENT',
